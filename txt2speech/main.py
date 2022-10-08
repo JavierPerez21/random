@@ -13,5 +13,7 @@ def convert_text_to_speech(text: str, title:str, rt: int = 150, vlm: float = 1.0
     voices = engine.getProperty('voices')       #getting details of current voice
     engine.setProperty('voice', voices[vc].id)   #changing index, changes voices. 1 for female
     """Saving Voice to a file"""
+    print("Generating audio...")
     engine.save_to_file(text, f'{title}.mp3')
     engine.runAndWait()
+    print("Done")

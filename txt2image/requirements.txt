@@ -1,0 +1,4 @@
+tensorflow
+matplotlib
+keras-cv
+tensorflow_datasets
