@@ -12,6 +12,7 @@ from TTS.utils.manage import ModelManager
 from TTS.utils.synthesizer import Synthesizer
 
 
+
 def str2bool(v):
     if isinstance(v, bool):
         return v
@@ -235,7 +236,7 @@ If you don't specify any models, then it uses LJSpeech based English model.
         parser.parse_args(["-h"])
 
     # load model manager
-    path = Path(__file__).parent.parent / "venv/lib/python3.9/site-packages/TTS/bin/../.models.json"
+    path = Path(__file__).parent.parent / "txt3speech/TTS/bin/../.models.json"
     manager = ModelManager(path)
 
     model_path = None
